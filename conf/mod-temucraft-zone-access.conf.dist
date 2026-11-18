@@ -1,0 +1,58 @@
+[worldserver]
+
+########################################
+# mod-temucraft-zone-access
+########################################
+#
+#    Temucraft.ZoneAccess.Enable
+#        Description: Close the areas, zones and maps listed in mod_temucraft_zone_access (world DB).
+#        Default:     1
+
+Temucraft.ZoneAccess.Enable = 1
+
+#
+#    Temucraft.ZoneAccess.Expansion
+#        Description: The server's "virtual" expansion. A row whose Expansion is higher is closed (unless its OpenDate
+#                     has passed). Not the client's expansion: any number works (3 = Cataclysm, 4 = Pandaria...).
+#                     Who goes in anyway is set per row (MinSecurity).
+#        Default:     2
+
+Temucraft.ZoneAccess.Expansion = 2
+
+#
+#    Temucraft.ZoneAccess.Announce
+#        Description: Tell players why they were stopped or moved.
+#        Default:     1
+
+Temucraft.ZoneAccess.Announce = 1
+
+#
+#    Temucraft.ZoneAccess.NewCharacters
+#        Description: A new character whose starting spot is closed starts at the row's fallback spot instead, with
+#                     its hearthstone set there.
+#        Default:     1
+
+Temucraft.ZoneAccess.NewCharacters = 1
+
+#
+#    Temucraft.ZoneAccess.LogBypass
+#        Description: Log when someone goes into a closed place thanks to their security level.
+#        Default:     1
+
+Temucraft.ZoneAccess.LogBypass = 1
+
+#
+#    Temucraft.ZoneAccess.CloseMapsWithoutData
+#        Description: Nobody (GMs included) is teleported to a map the server has no data for (missing from Map.dbc,
+#                     or no map tiles and no vmap tree in DataDir): the client crashes loading it.
+#        Default:     1
+
+Temucraft.ZoneAccess.CloseMapsWithoutData = 1
+
+#
+#    Temucraft.ZoneAccess.RescueFromMapsWithoutData
+#        Description: At server startup (with CloseMapsWithoutData on), characters saved on a map with no data are
+#                     moved to their hearthstone, or to Stormwind / Orgrimmar / Booty Bay if that's unusable too.
+#        Default:     1
+
+Temucraft.ZoneAccess.RescueFromMapsWithoutData = 1
