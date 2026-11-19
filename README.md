@@ -47,7 +47,7 @@ Examples are at the bottom of the SQL file.
 
 ## Works with other modules
 
-Doesn't need any other module. [`mod-ryans-debug`](https://github.com/TheSCREWEDSoftware/mod-ryans-debug) only reports maps with no data and leaves the stopping and moving to this module; its startup log says whether this module is doing it.
+Doesn't need any other module. `mod-ryans-debug` (if you have it) only reports maps with no data and leaves the stopping and moving to this module; its startup log says whether this module is doing it.
 
 Idea after 55Honey's Acore_Zonecheck (Eluna) and Ryan's rpSpawn zone and area lists.
 
