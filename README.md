@@ -15,7 +15,7 @@ The 3.3.5a client only knows expansions 0-2 (it reads a map's expansion only for
 - Players on a flight path or a boat/zeppelin are left alone until they land or step off. Ghosts may reach any graveyard; they're moved once alive.
 - New characters whose start is closed start at the row's fallback spot, with their hearthstone set there (`NewCharacters`).
 - **Maps with no data** (missing from Map.dbc, or no map tiles and no vmap tree in DataDir): the client crashes loading them, so nobody, GMs included, is teleported there, and at startup characters saved on one are moved to their hearthstone or faction city (`CloseMapsWithoutData`, `RescueFromMapsWithoutData`).
-- `.zoneaccess check` says whether where you stand is open and which row decides it; `.zoneaccess reload` re-reads the tables and the map data list.
+- `.temucraft zoneaccess check` says whether where you stand is open and which row decides it; `.temucraft zoneaccess reload` re-reads the tables and the map data list.
 
 ## Install
 

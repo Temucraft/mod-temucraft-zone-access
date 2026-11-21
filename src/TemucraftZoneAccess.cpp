@@ -21,8 +21,8 @@
  * them, so with Temucraft.ZoneAccess.CloseMapsWithoutData nobody, GMs included, is teleported there, and at server
  * startup characters saved on one are moved to their hearthstone, or their faction's city if that's unusable too.
  *
- *   .zoneaccess reload   re-reads both tables
- *   .zoneaccess check    says whether where you stand is open, and which row decides it
+ *   .temucraft zoneaccess reload   re-reads both tables
+ *   .temucraft zoneaccess check    says whether where you stand is open, and which row decides it
  *
  * Idea after 55Honey's Acore_Zonecheck (Eluna) and Ryan's rpSpawn zone and area lists.
  */
@@ -366,7 +366,7 @@ public:
             { "reload", HandleReload, 101501 /* SEC_ADMINISTRATOR -> RBAC */, Console::Yes },
             { "check",  HandleCheck,  101502 /* SEC_GAMEMASTER -> RBAC */,    Console::No },
         };
-        static ChatCommandTable root = { { "zoneaccess", sub } };
+        static ChatCommandTable root = { { "temucraft zoneaccess", sub } };
         return root;
     }
 

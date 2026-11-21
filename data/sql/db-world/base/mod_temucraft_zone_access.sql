@@ -17,7 +17,7 @@
 -- mod_temucraft_zone_fallback: the spots players are sent to.
 --
 -- The tables are only created here (never emptied), so your rows survive updates. Fill them in with your own SQL;
--- examples are at the bottom. After changing them in game: .zoneaccess reload
+-- examples are at the bottom. After changing them in game: .temucraft zoneaccess reload
 
 CREATE TABLE IF NOT EXISTS `mod_temucraft_zone_access` (
     `Type`             TINYINT UNSIGNED NOT NULL COMMENT '0 area, 1 zone, 2 map',
